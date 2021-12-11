@@ -1,0 +1,10 @@
+cat on 1GB file:
+Executed in   48.65 secs    fish           external
+   usr time    0.01 secs  139.00 micros    0.01 secs
+   sys time   48.47 secs  174.00 micros   48.47 secs
+
+pussy on 1GB file: (0.0.1)
+
+Executed in  238.68 secs    fish           external
+   usr time   32.76 secs  138.00 micros   32.76 secs
+   sys time  205.41 secs  136.00 micros  205.41 secs
