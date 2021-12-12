@@ -2,7 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define CMD "clear"
+#ifdef _WIN32
+  #define CMD "cls"
+#elif _WIN64
+  #define CMD "cls"
+#else
+  #define CMD "clear"
+#endif 
 
 int clear_buffer(char *flag, int *argc, int *last_arg);
 
