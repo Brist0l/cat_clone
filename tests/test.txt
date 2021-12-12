@@ -8,3 +8,18 @@ pussy on 1GB file: (0.0.1)
 Executed in  238.68 secs    fish           external
    usr time   32.76 secs  138.00 micros   32.76 secs
    sys time  205.41 secs  136.00 micros  205.41 secs
+--------------------------------------------------------
+
+Test 2
+cat on 1GB file:
+________________________________________________________
+Executed in   55.97 secs    fish           external
+   usr time    0.01 secs  439.00 micros    0.01 secs
+   sys time   55.83 secs  126.00 micros   55.83 secs
+
+pussy on 1GB file: (0.0.2)
+
+________________________________________________________
+Executed in  228.67 secs    fish           external
+   usr time   30.45 secs  439.00 micros   30.45 secs
+   sys time  197.86 secs  129.00 micros  197.86 secs

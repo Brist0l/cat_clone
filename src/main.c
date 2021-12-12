@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
   unsigned int num_of_letters = 0;
   int last_arg = argc - 1;
   char *last_arg_val;
-  FILE *input;
+  char data[50];
 
   last_arg_val = argv[last_arg];
   int use = clear_buffer(last_arg_val, &argc, &last_arg);
@@ -22,16 +22,15 @@ int main(int argc, char *argv[]) {
     if (use == 0) {
       system(CMD);
     }
+    FILE *input = fopen(argv[i], "r");
 
-    if (fopen(argv[i], "r") == NULL) {
-      puts("[-] Not A file!");
+    if (input == NULL) {
+      printf("pussy: %s:No such file or directory", argv[i]);
       return 1;
     }
 
-    input = fopen(argv[i], "r");
-    while ((c = fgetc(input)) != EOF) {
-      printf("%c", c);
-
+    while ((fgets(data, 50, input)) != NULL) {
+      printf("%s", data);
       word_count++;
 
       if (c == '\n')
