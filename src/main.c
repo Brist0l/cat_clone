@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
   unsigned int num_of_letters = 0;
   int last_arg = argc - 1;
   char *last_arg_val;
-  // seems to me that 2 bits is all you need, especially if you are going to be iterating on them
+  // seems to me that 2 bytes is all you need, especially if you are going to be iterating on them
   char data[2] = "\0";
   last_arg_val = argv[last_arg];
   int use = clear_buffer(last_arg_val, &argc, &last_arg);
