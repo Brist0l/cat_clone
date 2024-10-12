@@ -19,14 +19,14 @@ cd cat_clone/
 To compile from source use your preffered compiler. In this case I will be using gcc
 
 ```bash
-gcc src/main.c -o bin/pussy
+gcc src/main.c -o bin/catt
 
 ```
 
 To move the bin to the desired location in this case [/usr/bin/]
 
 ```bash
-# mv bin/pussy usr/bin/
+# mv bin/catt usr/bin/
 ```
 
 ## Usage
@@ -34,17 +34,17 @@ To move the bin to the desired location in this case [/usr/bin/]
 This will print the contents of the file
 
 ```
-pussy {file}
+catt {file}
 
 ```
 You can also print the contents of multiple files using 
 ```
-pussy {file} {file1} {file2}
+catt {file} {file1} {file2}
 ```
 You can also add the clear flag by using -c 
 
 ```
-pussy {file} -c 
+catt {file} -c 
 ```
 
 ## Integrating it with other tools 
@@ -54,16 +54,16 @@ pussy {file} -c
 This will print coloured text
 
 ```
-pussy {file} | lolcat
+catt {file} | lolcat
 ```
 This will ease your viewing with big files
 ```
-pussy {file} | less
+catt {file} | less
 ```
 This is for filtering contents 
 
 ```
-pussy {file} | grep lol
+catt {file} | grep lol
 ```
 
 ## Diffrence 
